@@ -1,0 +1,147 @@
+/* Importando uma fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* --- VARIÁVEIS DE COR --- */
+:root{
+  --fundo-escuro: #000;
+  --fundo-card: #1d2226;
+  --fundo-card-ativo: hsla(0, 0%, 100%, 0.12);
+  --texto-principal: hsla(0, 0%, 100%, 0.9);
+  --texto-secundario: hsla(0, 0%, 100%, 0.6);
+  --texto-escuro: hsla(0, 0%, 0%, 0.75);
+  --input: #38434F;
+  --primario: #70b5f9;
+  --positivo: #3ec786;
+}
+
+/* --- ESTILOS GLOBAIS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fundo-escuro);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* --- ESTILOS DO CARTÃO --- */
+
+.profile-card {
+    background-color: var(--fundo-card);
+    width: 100%;
+    max-width: 550px; 
+    border-radius: 8px;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+}
+
+/* 1. Imagem de Capa */
+
+.card-header {
+    background: url('https://images.unsplash.com/photo-1554147090-e1221a04a025?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+    height: 140px;
+    position: relative;
+}
+
+/* 2. Corpo do Cartão */
+
+.card-body {
+    padding: 0 20px 20px 20px;
+    position: relative;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--fundo-card);
+    position: absolute;
+    top: -60px; 
+    left: 20px;
+    background-color: var(--fundo-card);
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    margin-top: 70px; 
+    color: var(--texto-principal);
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.profile-title, .profile-career {
+    font-size: 16px;
+    color: var(--texto-principal);
+    margin-top: 8px;
+}
+
+.profile-contact {
+    font-size: 14px;
+    color: var(--texto-secundario);
+    margin-top: 8px;
+}
+
+.profile-contact a {
+    color: var(--primario);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.profile-contact a:hover {
+    text-decoration: underline;
+}
+
+/* 3. Botões de Ação */
+
+.action-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px; 
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--primario);
+    color: var(--fundo-escuro);
+}
+
+.btn-primary:hover {
+    background-color: #8ccbff; 
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primario);
+    border: 1px solid var(--primario);
+}
+
+.btn-secondary:hover {
+    background-color: var(--fundo-card-ativo);
+    box-shadow: inset 0 0 0 1px var(--primario);
+}
