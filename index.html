@@ -1,146 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil LinkedIn (Versão Melhorada)</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil LinkedIn | Gabriel de Peder</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header class="navbar">
-        <div class="navbar-container">
-            <div class="navbar-left">
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34"
-                        class="navbar-logo">
-                        <g>
-                            <path
-                                d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm-2.5-6.2A2.8,2.8,0,1,0,4.7,4,2.8,2.8,0,0,0,7.5,6.8ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z"
-                                fill="currentColor"></path>
-                        </g>
-                    </svg>
-                </a>
-                <div class="search-box">
-                    <span class="material-icons-outlined">search</span>
-                    <input type="text" placeholder="Pesquisar">
-                </div>
-            </div>
 
-            <div class="navbar-right">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#" class="nav-link active">
-                                <span class="material-icons-outlined">home</span>
-                                <span class="nav-text">Início</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link">
-                                <span class="material-icons-outlined">group</span>
-                                <span class="nav-text">Minha rede</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link">
-                                <span class="material-icons-outlined">business_center</span>
-                                <span class="nav-text">Vagas</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link">
-                                <span class="material-icons-outlined">sms</span>
-                                <span class="nav-text">Mensagens</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link">
-                                <span class="material-icons-outlined">notifications</span>
-                                <span class="nav-text">Notificações</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link">
-                                <span class="material-icons-outlined">apps</span>
-                                <span class="nav-text">Soluções</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+  <header class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-left">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" class="navbar-logo">
+                    <g>
+                        <path d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm-2.5-6.2A2.8,2.8,0,1,0,4.7,4,2.8,2.8,0,0,0,7.5,6.8ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z" fill="currentColor"></path>
+                    </g>
+                </svg>
+            </a>
+            <div class="search-box">
+                <span class="material-icons-outlined">search</span>
+                <input type="text" placeholder="Pesquisar">
             </div>
         </div>
-    </header>
-    <main class="container">
 
-        <section class="card informacoes-perfil">
-            <div class="perfil-capa">
-                <img src="https://images.unsplash.com/photo-1554147090-e1221a04a025?q=80&w=1200&auto=format&fit=crop"
-                    alt="Imagem de capa do perfil">
-            </div>
-
-            <div class="perfil-foto-wrap">
-                <div class="perfil-foto">
-                    <img src="https://github.com/filipedeschamps.png" alt="Foto de perfil">
-                    <span class="online"></span>
-                </div>
-            </div>
-
-            <div class="perfil-detalhes-wrap">
-
-                <div class="perfil-detalhes-pessoal">
-                    <h1>Filipe Deschamps</h1>
-                    <div class="texto-medio">
-                        Software Engineer | Creator | YouTuber
-                    </div>
-                    <div class="texto-pequeno">
-                        Fala sobre #frontend, #backend, #carreira, e #tecnologia
-                    </div>
-                </div>
-
-                <ul class="perfil-detalhes-carreira">
-                    <li>
-                        <a href="#">
-                            <img src="https://media.licdn.com/dms/image/C4D0BAQG56224PiquSQ/company-logo_200_200/0/1630638324482/alura_logo?e=2147483647&v=beta&t=9V2_t0-8IV0Y2s2G9O-5pZ5rA6s4K_u9a__xG2sM9sY"
-                                alt="Logo da empresa Alura">
-                            <h2>Alura</h2>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="https://media.licdn.com/dms/image/C560BAQHaVYd13r0AVG/company-logo_200_200/0/1630648272182/dio_me_logo?e=2147483647&v=beta&t=44ikw1Hh9y2m_n22_yVIeQMLPj-L9I7aJz5-p322cIM"
-                                alt="Logo da instituição de ensino DIO">
-                            <h2>Digital Innovation One</h2>
-                        </a>
-                    </li>
+        <div class="navbar-right">
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-link active"><span class="material-icons-outlined">home</span><span class="nav-text">Início</span></a></li>
+                    <li><a href="#" class="nav-link"><span class="material-icons-outlined">group</span><span class="nav-text">Minha rede</span></a></li>
+                    <li><a href="#" class="nav-link"><span class="material-icons-outlined">business_center</span><span class="nav-text">Vagas</span></a></li>
+                    <li><a href="#" class="nav-link"><span class="material-icons-outlined">sms</span><span class="nav-text">Mensagens</span></a></li>
+                    <li><a href="#" class="nav-link"><span class="material-icons-outlined">notifications</span><span class="nav-text">Notificações</span></a></li>
+                    <li><a href="#" class="nav-link"><span class="material-icons-outlined">apps</span><span class="nav-text">Soluções</span></a></li>
                 </ul>
+            </nav>
+        </div>
 
-                <div class="perfil-detalhes-local">
-                    <span>São Paulo, Brasil</span>
-                    <span class="local-contato">
-                        <a href="#">informações de contato</a>
-                    </span>
+        <button class="menu-hamburguer" aria-label="Abrir menu">
+            <span class="material-icons-outlined">menu</span>
+        </button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="card informacoes-perfil">
+      <div class="perfil-capa">
+        <img src="https://images.unsplash.com/photo-1554147090-e1221a04a025?q=80&w=1200&auto=format&fit=crop" alt="Imagem de capa do perfil">
+      </div>
+  
+      <div class="perfil-foto-wrap">
+        <div class="perfil-foto">
+          <img src="https://github.com/GabrieldPeder.png" alt="Foto de perfil de Gabriel de Peder">
+          <span class="online"></span>
+        </div>
+      </div>
+  
+      <div class="perfil-detalhes-wrap">
+        <div class="perfil-detalhes-pessoal">
+          <h1>Gabriel de Peder</h1>
+          <div class="texto-medio">Dev Front-end | HTML | CSS | JavaScript</div>
+          <div class="texto-pequeno">Fala sobre #frontend, #css, #webdev e #tecnologia</div>
+        </div>
+  
+        <ul class="perfil-detalhes-carreira">
+          <li><a href="#"><img src="https://media.licdn.com/dms/image/C4D0BAQG56224PiquSQ/company-logo_200_200/0/1630638324482/alura_logo?e=2147483647&v=beta&t=9V2_t0-8IV0Y2s2G9O-5pZ5rA6s4K_u9a__xG2sM9sY" alt="Logo da empresa Alura"><h2>Alura</h2></a></li>
+          <li><a href="#"><img src="https://media.licdn.com/dms/image/C560BAQHaVYd13r0AVG/company-logo_200_200/0/1630648272182/dio_me_logo?e=2147483647&v=beta&t=44ikw1Hh9y2m_n22_yVIeQMLPj-L9I7aJz5-p322cIM" alt="Logo da instituição de ensino DIO"><h2>Digital Innovation One</h2></a></li>
+        </ul>
+  
+        <div class="perfil-detalhes-local">
+          <span>São Paulo, Brasil</span>
+          <span class="local-contato"><a href="#">informações de contato</a></span>
+        </div>
+      </div>
+  
+      <ul class="perfil-conexoes">
+        <li>1234 seguidores</li>
+        <li>+ de 500 conexões</li>
+      </ul>
+  
+      <div class="perfil-acoes">
+        <button class="botao botao-primario">Tenho interesse</button>
+        <button class="botao botao-secundario">Adicionar seção do perfil</button>
+      </div>
+    </section>
+
+    <section class="publicacoes-resumo">
+        <h2>Publicações Recentes</h2>
+        <div class="publicacoes-lista">
+            <div class="publicacao-card">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop" alt="Imagem de um notebook com código">
+                <div class="publicacao-info">
+                    <p class="legenda">Confira meu novo artigo sobre as últimas tendências em desenvolvimento front-end!</p>
+                    <div class="publicacao-interacoes">
+                        <div class="interacao"><span class="material-icons-outlined">thumb_up</span><span>125</span></div>
+                        <div class="interacao"><span class="material-icons-outlined">comment</span><span>32</span></div>
+                    </div>
                 </div>
             </div>
-
-            <ul class="perfil-conexoes">
-                <li>999 seguidores</li>
-                <li>+ de 500 conexões</li>
-            </ul>
-
-            <div class="perfil-acoes">
-                <button class="botao botao-primario">Tenho interesse</button>
-                <button class="botao botao-secundario">Adicionar seção do perfil</button>
+            <div class="publicacao-card">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1974&auto=format&fit=crop" alt="Logos de redes sociais">
+                <div class="publicacao-info">
+                    <p class="legenda">Participei de um webinar incrível sobre o futuro das redes sociais. Fiquem ligados para o resumo!</p>
+                    <div class="publicacao-interacoes">
+                        <div class="interacao"><span class="material-icons-outlined">thumb_up</span><span>88</span></div>
+                        <div class="interacao"><span class="material-icons-outlined">comment</span><span>15</span></div>
+                    </div>
+                </div>
             </div>
-        </section>
+            <div class="publicacao-card">
+                <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2070&auto=format&fit=crop" alt="Mesa de trabalho com notebook e café">
+                <div class="publicacao-info">
+                    <p class="legenda">Compartilhando um projeto pessoal que desenvolvi nas últimas semanas. Feedback é muito bem-vindo!</p>
+                    <div class="publicacao-interacoes">
+                        <div class="interacao"><span class="material-icons-outlined">thumb_up</span><span>153</span></div>
+                        <div class="interacao"><span class="material-icons-outlined">comment</span><span>47</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </main>
+  </main>
+
 </body>
-
 </html>

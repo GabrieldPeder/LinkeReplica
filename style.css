@@ -1,7 +1,6 @@
-/* Importando uma fonte bacana do Google Fonts */
+/* --- GLOBAIS E VARIÁVEIS --- */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-/* --- PONTO FORTE NOSSO: VARIÁVEIS DE COR --- */
 :root{
   --fundo-escuro: #000;
   --fundo-card: #1d2226;
@@ -12,10 +11,9 @@
   --input: #38434F;
   --primario: #70b5f9;
   --positivo: #3ec786;
-  --borda-online: #1d2226; 
+  --borda-online: #1d2226;
 }
 
-/* --- ESTILOS GLOBAIS --- */
 * {
     margin: 0;
     padding: 0;
@@ -28,9 +26,7 @@ body {
     color: var(--texto-principal);
     display: flex;
     justify-content: center;
-    align-items: center;
     min-height: 100vh;
-    padding: 2rem;
 }
 
 a {
@@ -42,11 +38,100 @@ a:hover {
   text-decoration: underline;
 }
 
-/* --- CARD --- */
-.card {
+main.container {
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    max-width: 55rem;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    background-color: var(--fundo-card);
+    border-bottom: 1px solid var(--input);
+    padding: 0.5rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1128px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar-logo {
+    color: var(--primario);
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: var(--input);
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    gap: 0.8rem;
+}
+
+.search-box input {
+    background: transparent;
+    border: none;
+    color: var(--texto-principal);
+    font-size: 1.4rem;
+    outline: none;
+}
+
+.search-box input::placeholder {
+    color: var(--texto-secundario);
+}
+
+.navbar-right nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--texto-secundario);
+    padding: 0.5rem 1.2rem;
+    min-width: 8rem;
+    transition: background-color 0.2s;
+}
+
+.nav-link:hover {
+    background-color: var(--fundo-card-ativo);
+    color: var(--texto-principal);
+    text-decoration: none;
+}
+
+.nav-link.active {
+    color: var(--texto-principal);
+    border-bottom: 2px solid var(--texto-principal);
+}
+
+.nav-text {
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+}
+
+/* --- CARD DE PERFIL --- */
+.informacoes-perfil {
   background-color: var(--fundo-card);
-  max-width: 55rem;
-  width: 100%;
   border-radius: 0.8rem;
   overflow: hidden;
 }
@@ -61,7 +146,7 @@ a:hover {
 .perfil-foto-wrap {
   position: relative;
   padding: 0 2rem;
-  margin-top: -6rem; 
+  margin-top: -6rem;
 }
 
 .perfil-foto {
@@ -70,7 +155,7 @@ a:hover {
   border-radius: 50%;
   overflow: hidden;
   border: 0.4rem solid var(--fundo-card);
-  position: relative; 
+  position: relative;
   background-color: var(--fundo-card);
 }
 
@@ -79,7 +164,6 @@ a:hover {
   height: 100%;
   object-fit: cover;
 }
-
 
 .online {
   width: 1.8rem;
@@ -194,92 +278,148 @@ a:hover {
     box-shadow: inset 0 0 0 0.1rem var(--primario);
 }
 
-main.container {
-    padding-top: 8rem; /* Altura aproximada da navbar para o conteúdo não ficar embaixo dela */
-}
-
-/* --- NAVBAR --- */
-.navbar {
+/* --- RESUMO DE PUBLICAÇÕES --- */
+.publicacoes-resumo {
     background-color: var(--fundo-card);
-    border-bottom: 1px solid var(--input);
-    padding: 0.5rem 0;
-
-    /* Fixa a navbar no topo */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Garante que a navbar fique sobre outros elementos */
+    border-radius: 0.8rem;
+    margin-top: 2rem;
+    padding: 2rem;
 }
 
-.navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1128px; /* Largura padrão do conteúdo do LinkedIn */
-    margin: 0 auto;
-    padding: 0 2rem;
+.publicacoes-resumo h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
 }
 
-.navbar-left {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.navbar-logo {
-    color: var(--primario);
-}
-
-.search-box {
-    display: flex;
-    align-items: center;
-    background-color: var(--input);
-    padding: 0.8rem;
-    border-radius: 0.4rem;
-    gap: 0.8rem;
-}
-
-.search-box input {
-    background: transparent;
-    border: none;
-    color: var(--texto-principal);
-    font-size: 1.4rem;
-    outline: none;
-}
-
-.search-box input::placeholder {
-    color: var(--texto-secundario);
-}
-
-.navbar-right nav ul {
-    display: flex;
-    list-style: none;
-}
-
-.nav-link {
+.publicacoes-lista {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--texto-secundario);
-    padding: 0.5rem 1.2rem;
-    min-width: 8rem;
-    transition: background-color 0.2s;
+    gap: 1.5rem;
 }
 
-.nav-link:hover {
-    background-color: var(--fundo-card-ativo);
+.publicacao-card {
+    border: 1px solid var(--input);
+    border-radius: 0.6rem;
+    overflow: hidden;
+}
+
+.publicacao-card img {
+    width: 100%;
+    display: block;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.publicacao-info {
+    padding: 1rem;
+}
+
+.publicacao-info .legenda {
+    font-size: 1.4rem;
     color: var(--texto-principal);
-    text-decoration: none;
+    margin-bottom: 1rem;
 }
 
-.nav-link.active {
-    color: var(--texto-principal);
-    border-bottom: 2px solid var(--texto-principal);
-}
-
-.nav-text {
+.publicacao-interacoes {
+    display: flex;
+    gap: 2rem;
     font-size: 1.2rem;
-    margin-top: 0.2rem;
+    color: var(--texto-secundario);
+}
+
+.interacao {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.interacao span.material-icons-outlined {
+    font-size: 1.4rem;
+}
+
+/* --- RESPONSIVIDADE (VERSÃO COM MENU HAMBÚRGUER) --- */
+.menu-hamburguer {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--texto-principal);
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    .nav-text {
+        display: none;
+    }
+    .nav-link {
+        min-width: auto;
+        padding: 0.5rem 1.5rem;
+    }
+    .search-box input {
+       display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-right nav {
+        display: none;
+    }
+    .menu-hamburguer {
+        display: block;
+    }
+    .search-box {
+        display: none;
+    }
+    main.container {
+        padding-top: 7rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .navbar-container {
+        padding: 0 1.5rem;
+    }
+    .publicacoes-resumo {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .informacoes-perfil, .publicacoes-resumo {
+        border-radius: 0;
+    }
+    .publicacoes-resumo {
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    .perfil-foto-wrap {
+        display: flex;
+        justify-content: center;
+        margin-top: -8rem;
+    }
+    .perfil-foto {
+        width: 10rem;
+        height: 10rem;
+    }
+    .online {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-width: 0.2rem;
+    }
+    .perfil-detalhes-wrap {
+        text-align: center;
+    }
+    .perfil-detalhes-carreira {
+        align-items: center;
+    }
+    .perfil-detalhes-local, .perfil-conexoes {
+        justify-content: center;
+    }
+    .perfil-acoes {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    .botao {
+        width: 100%;
+    }
 }
