@@ -27,7 +27,9 @@ body {
     display: flex;
     justify-content: center;
     min-height: 100vh;
-    padding: 1rem; /* MELHORIA: Adiciona um respiro geral */
+    padding: 1rem;
+    /* MELHORIA: Ajuste para dar menos "zoom" geral */
+    font-size: 15px; /* Reduz ligeiramente o tamanho da fonte base */
 }
 
 a {
@@ -40,10 +42,10 @@ a:hover {
 }
 
 main.container {
-    padding-top: 8rem;
+    padding-top: 7rem; /* Ajusta o padding-top devido à possível mudança no font-size */
     padding-bottom: 2rem;
     width: 100%;
-    max-width: 55rem;
+    max-width: 50rem; /* MELHORIA: Reduz o max-width para afastar o conteúdo */
 }
 
 /* --- NAVBAR --- */
@@ -71,6 +73,8 @@ main.container {
     display: flex;
     align-items: center;
     gap: 1rem;
+    /* MELHORIA: Adiciona margem direita para afastar do "Início" */
+    margin-right: 1rem;
 }
 
 .navbar-logo {
@@ -135,6 +139,8 @@ main.container {
   background-color: var(--fundo-card);
   border-radius: 0.8rem;
   overflow: hidden;
+  /* MELHORIA: Adiciona espaço abaixo do card */
+  margin-bottom: 2rem;
 }
 
 .perfil-capa img {
@@ -193,7 +199,7 @@ main.container {
 .texto-medio {
   font-size: 1.6rem;
   margin: 0.8rem 0;
-  color: var(--texto-principal); /* MELHORIA: Destaque maior para o título */
+  color: var(--texto-principal);
 }
 
 .texto-pequeno, .perfil-detalhes-local, .perfil-conexoes {
@@ -257,12 +263,12 @@ main.container {
   font-size: 1.4rem;
   font-weight: 700;
   cursor: pointer;
-  transition: all 0.2s ease-in-out; /* MELHORIA: Transição suave para tudo */
+  transition: all 0.2s ease-in-out;
 }
 
 .botao:hover {
-  transform: translateY(-2px); /* MELHORIA: Efeito de levantar */
-  filter: brightness(1.1); /* MELHORIA: Brilho sutil */
+  transform: translateY(-2px);
+  filter: brightness(1.1);
 }
 
 .botao-primario {
@@ -302,15 +308,14 @@ main.container {
 }
 
 .publicacao-card {
-    /* border: 1px solid var(--input); */ /* Removido */
-    box-shadow: 0 0 0 1px var(--input); /* MELHORIA: Sombra sutil no lugar da borda */
+    box-shadow: 0 0 0 1px var(--input);
     border-radius: 0.8rem;
     overflow: hidden;
     transition: box-shadow 0.2s ease-in-out;
 }
 
 .publicacao-card:hover {
-    box-shadow: 0 0 0 1px var(--texto-secundario); /* MELHORIA: Destaque no hover */
+    box-shadow: 0 0 0 1px var(--texto-secundario);
 }
 
 .publicacao-card img {
@@ -344,7 +349,7 @@ main.container {
 }
 
 .interacao span:last-child {
-    font-weight: 700; /* MELHORIA: Destaque nos números */
+    font-weight: 700;
     color: var(--texto-principal);
 }
 
@@ -376,7 +381,7 @@ main.container {
 
 @media (max-width: 767px) {
     body {
-        padding: 0; /* Remove o padding do body em telas de tablet/mobile */
+        padding: 0;
     }
     .navbar-right nav {
         display: none;
