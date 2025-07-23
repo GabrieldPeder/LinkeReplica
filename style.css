@@ -28,8 +28,6 @@ body {
     justify-content: center;
     min-height: 100vh;
     padding: 1rem;
-    /* MELHORIA: Ajuste para dar menos "zoom" geral */
-    font-size: 15px; /* Reduz ligeiramente o tamanho da fonte base */
 }
 
 a {
@@ -42,10 +40,10 @@ a:hover {
 }
 
 main.container {
-    padding-top: 7rem; /* Ajusta o padding-top devido à possível mudança no font-size */
+    padding-top: 8rem;
     padding-bottom: 2rem;
     width: 100%;
-    max-width: 50rem; /* MELHORIA: Reduz o max-width para afastar o conteúdo */
+    max-width: 55rem;
 }
 
 /* --- NAVBAR --- */
@@ -73,8 +71,6 @@ main.container {
     display: flex;
     align-items: center;
     gap: 1rem;
-    /* MELHORIA: Adiciona margem direita para afastar do "Início" */
-    margin-right: 1rem;
 }
 
 .navbar-logo {
@@ -139,8 +135,7 @@ main.container {
   background-color: var(--fundo-card);
   border-radius: 0.8rem;
   overflow: hidden;
-  /* MELHORIA: Adiciona espaço abaixo do card */
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; /* Adicionado espaço entre os cards */
 }
 
 .perfil-capa img {
@@ -287,11 +282,91 @@ main.container {
     box-shadow: inset 0 0 0 0.1rem var(--primario);
 }
 
+/* --- SEÇÃO SOBRE --- */
+.sobre {
+  background-color: var(--fundo-card);
+  border-radius: 0.8rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sobre h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.sobre p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  text-align: justify;
+  color: var(--texto-secundario);
+}
+
+/* --- SEÇÃO ATIVIDADES --- */
+.atividades {
+  background-color: var(--fundo-card);
+  border-radius: 0.8rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.atividades h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.atividade-item {
+  display: flex;
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--input); 
+}
+
+.atividades-lista > .atividade-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.atividade-imagem img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 0.8rem;
+  object-fit: cover;
+}
+
+.atividade-texto p {
+  font-size: 1.4rem;
+  color: var(--texto-principal);
+}
+
+.atividade-texto p.texto-pequeno {
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
+.ver-mais {
+  display: block;
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  font-weight: 700;
+  transition: background-color 0.2s;
+}
+
+.ver-mais:hover {
+  background-color: var(--fundo-card-ativo);
+  text-decoration: none;
+}
+
+
 /* --- RESUMO DE PUBLICAÇÕES --- */
 .publicacoes-resumo {
     background-color: var(--fundo-card);
     border-radius: 0.8rem;
-    margin-top: 2rem;
     padding: 2rem;
 }
 
@@ -400,18 +475,31 @@ main.container {
     .navbar-container {
         padding: 0 1.5rem;
     }
-    .publicacoes-resumo {
+    .publicacoes-resumo, .sobre, .atividades {
         padding: 1.5rem;
+    }
+    .sobre, .atividades {
+      margin-bottom: 1rem;
     }
 }
 
 @media (max-width: 575px) {
-    .informacoes-perfil, .publicacoes-resumo {
+    .informacoes-perfil, .publicacoes-resumo, .sobre, .atividades {
         border-radius: 0;
     }
     .publicacoes-resumo {
         margin-top: 1rem;
         padding: 1rem;
+    }
+    .sobre, .atividades {
+      margin-bottom: 1rem;
+    }
+    .sobre p {
+      text-align: left;
+    }
+    .atividade-imagem img {
+      width: 5rem;
+      height: 5rem;
     }
     .perfil-foto-wrap {
         display: flex;
