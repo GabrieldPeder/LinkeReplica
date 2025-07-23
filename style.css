@@ -71,6 +71,7 @@ main.container {
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-right: 2rem;
 }
 
 .navbar-logo {
@@ -246,7 +247,7 @@ main.container {
 }
 
 .perfil-acoes {
-  margin-top: 1.6rem;
+  margin-top: 0.8rem;
   display: flex;
   gap: 1rem;
 }
