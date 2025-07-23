@@ -71,7 +71,7 @@ main.container {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-right: 2rem;
+    margin-right: 5rem;
 }
 
 .navbar-logo {
@@ -250,6 +250,7 @@ main.container {
   margin-top: 0.8rem;
   display: flex;
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .botao {
